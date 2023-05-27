@@ -1,0 +1,22 @@
+@use './spacing' as *;
+@use '../abstracts' as *;
+
+$pad-sm: rem(24);
+$pad-md: rem(32);
+
+.container {
+	max-width: 1130px;
+	margin: 0 auto;
+	@include breakpoint-max(md) {
+		padding: 0px $pad-sm;
+	}
+
+	@include breakpoint-inBetween(md, xl) {
+		padding: 0px $pad-md;
+	}
+}
+
+.d-flex-column {
+	display: flex;
+	flex-direction: column;
+}

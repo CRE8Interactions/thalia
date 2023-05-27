@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+@use './colors' as *;
+@use './borders' as *;
+
+// Buttons
+$btn-font-family: $font-btn;
+$btn-font-weight: $fw-bold;
+$btn-font-size: rem(16);
+
+$btn-padding-y: rem(14);
+$btn-padding-x: rem(24);
+
+$btn-border-radius: $border-radius-lg;
+$btn-border-radius-sm: $border-radius-lg;
+$btn-border-width: $border-width;
+$btn-line-height: 1;
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;

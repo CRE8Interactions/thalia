@@ -1,0 +1,5 @@
+@use '../layout/spacing' as *;
+
+// grid and gaps
+$spacer: 1rem;
+$spacers: (0: 0, 1: $spacer * .5, 2: $spacer, 3: $spacer * 1.5, 4: $spacer * 2, 5: $spacer * 2.5); // 8, 16, 24, 32, 40

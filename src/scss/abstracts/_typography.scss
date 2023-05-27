@@ -1,0 +1,23 @@
+@use './mixins' as *;
+
+// Fonts
+$font-body: var(--inter-font);
+$font-btn: var(--dmSans-font);
+
+// Font Weights
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+$line-height-base: 1.4;
+
+$h1-font-size: rem(56);
+$h2-font-size: rem(32);
+$h3-font-size: rem(26);
+$h4-font-size: rem(24);
+
+$body-1: rem(24);
+$body-2: rem(18);
+$small: rem(14);
+$caption: rem(12);

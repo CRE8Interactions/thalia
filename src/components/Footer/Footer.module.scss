@@ -1,0 +1,31 @@
+@use '../../scss/abstracts' as *;
+@use '../../scss/theme/card' as *;
+@use '../../scss/theme/colors' as *;
+@use '../../scss/layout/spacing' as *;
+
+.footer {
+	padding: 0px $text-spacer-xs;
+	@extend .bg-light !optional;
+	border-radius: $br-lg $br-lg 0px 0px;
+}
+
+.socialIcons {
+	gap: $gap-xs;
+	justify-content: center;
+}
+
+.poweredBy {
+	border-top: border();
+	margin-top: $text-spacer-sm;
+	padding-top: $text-spacer-xs;
+	width: 100%;
+	font-family: $font-body;
+	font-weight: $fw-medium;
+	span {
+		vertical-align: middle;
+	}
+
+	@include breakpoint-min(md) {
+		padding-top: $text-spacer-sm;
+	}
+}

@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+@use '../theme/colors' as *;
+
+.btn {
+	white-space: nowrap;
+
+	a {
+		color: inherit;
+	}
+}
+
+.btn-secondary {
+	&:hover,
+	&:focus {
+		background-color: rgba(0, 0, 0, 0.5);
+		color: $white;
+	}
+}
+
+.btn-outline-light {
+	color: $body-color;
+
+	&:disabled {
+		color: inherit;
+	}
+}

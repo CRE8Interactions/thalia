@@ -1,0 +1,73 @@
+@use '../abstracts' as *;
+@use 'typography' as *;
+@use 'spacing' as *;
+@use 'container' as *;
+@use '../theme/card' as *;
+@use '../theme/colors' as *;
+
+.card {
+	box-shadow: $box-shadow;
+
+	&--light {
+		background-color: #FFFF;
+	}
+
+	&-body {
+		@include breakpoint-min(md) {
+			padding: rem(32);
+		}
+	}
+
+	&-title {
+		font-size: $h4-font-size;
+		font-weight: $fw-bold;
+
+		$card-title-spacer-sm: $text-spacer-xs;
+
+		@include breakpoint-max(md) {
+			font-size: rem(20);
+		}
+
+		&-sm {
+			font-size: $body-2;
+			margin-bottom: $card-title-spacer-sm;
+
+			@include breakpoint-min(md) {
+				font-size: rem(20);
+			}
+		}
+
+		&-lg {
+			font-size: $h3-font-size;
+			margin-bottom: $card-title-spacer-sm;
+		}
+
+		&--primary {
+			color: $primary;
+		}
+	}
+
+	&-subtitle {
+		margin-top: rem(4);
+		margin-bottom: rem(8);
+	}
+
+	&-text,
+	ul {
+		line-height: 1.8;
+		font-weight: $fw-medium;
+
+		@include breakpoint-max(md) {
+			font-size: $small;
+		}
+
+		& + &,
+		& + .row {
+			margin-top: $text-spacer-sm;
+		}
+	}
+
+	.row + &-text {
+		margin-top: $text-spacer-sm;
+	}
+}

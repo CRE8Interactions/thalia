@@ -1,0 +1,22 @@
+@use '../../../scss/abstracts' as *;
+@use '../../../scss/layout/spacing' as *;
+
+.card {
+	address {
+		font-size: rem(16);
+	}
+}
+
+.image {
+	height: 100%;
+	@include breakpoint-max(md) {
+		height: 226px;
+	}
+}
+
+.map {
+	@include breakpoint-max(md) {
+		margin-bottom: $gap;
+		order: -1;
+	}
+}

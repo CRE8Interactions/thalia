@@ -1,0 +1,40 @@
+@use './abstracts' as *;
+
+@use './layout/spacing' as *;
+@use './theme/colors' as *;
+
+address {
+	font-family: $font-body;
+}
+
+h1,
+.h1 {
+	font-size: $h1-font-size;
+}
+h2,
+.h2 {
+	font-size: $h2-font-size;
+}
+h3,
+.h3 {
+	font-size: $h3-font-size;
+}
+h4,
+.h4 {
+	font-size: $h4-font-size;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	color: $body-color;
+	-webkit-text-fill-color: $body-color;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+section + section {
+	margin-top: $text-spacer-lg;
+}

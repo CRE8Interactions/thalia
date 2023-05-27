@@ -1,0 +1,23 @@
+@use '../../../scss/abstracts' as *;
+@use '../../../scss/layout/spacing' as *;
+
+.list {
+	padding-left: $text-spacer-sm;
+
+	@include breakpoint-min(md) {
+		padding-left: $text-spacer-xs;
+	}
+
+	li {
+		position: relative;
+
+		&::before {
+			content: "\02022";
+			position: absolute;
+			left: rem(-22);
+		}
+	}
+	li + li {
+		margin-top: rem(5);
+	}
+}

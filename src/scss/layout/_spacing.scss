@@ -1,0 +1,51 @@
+@use '../abstracts' as *;
+
+// Banner Spacers
+
+// Page Spacers
+$spacer: rem(60);
+$spacer-sm: rem(32);
+
+// Text Spacers
+$heading-spacer: rem(32); // page headings
+$heading-spacer-md: rem(32); // event and guest detail wrappers
+$heading-spacer-sm: rem(24); // page headings
+$gap-lg: rem(40); // upcoming events
+$gap: rem(32); // history, contact us
+$gap-sm: rem(24); // private events
+$gap-xs: rem(16); // nav links, footer social icons
+
+$text-spacer-lg: rem(40); // sections
+$text-spacer: rem(32);
+$text-spacer-sm: rem(24);
+$text-spacer-xs: rem(16);
+
+.spacer {
+	padding: $spacer 0px;
+}
+
+// private events
+.spacer-top {
+	margin-top: $spacer;
+}
+
+// footer
+.spacer-sm {
+	padding: $spacer 0px $spacer-sm;
+}
+
+// upcoming-events, history, contact us
+.grid-container {
+	@include breakpoint-max(md) {
+		gap: $gap;
+
+		// private events, history
+		&-sm {
+			gap: $gap-sm;
+		}
+		// upcoming-events
+		&-lg {
+			gap: $gap-lg;
+		}
+	}
+}
