@@ -9,14 +9,6 @@
 	}
 }
 
-.btn-secondary {
-	&:hover,
-	&:focus {
-		background-color: rgba(0, 0, 0, 0.5);
-		color: $white;
-	}
-}
-
 .btn-outline-light {
 	color: $body-color;
 
