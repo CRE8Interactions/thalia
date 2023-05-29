@@ -20,3 +20,9 @@ $pad-md: rem(32);
 	display: flex;
 	flex-direction: column;
 }
+
+.logo {
+	@include breakpoint-max(md) {
+		width: rem(40);
+	}
+}
