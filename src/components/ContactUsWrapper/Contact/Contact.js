@@ -42,6 +42,7 @@ export default function Contact() {
                             className={`${styles.image} image`}
                             width="742"
                             height="339"
+                            priority
                         />
                     </Col>
                 </Row>
