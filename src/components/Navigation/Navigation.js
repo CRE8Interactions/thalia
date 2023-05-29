@@ -31,7 +31,7 @@ export default function Navigation() {
                 </Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" id="navbar-toggle" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav as="nav" activeKey={router.pathname} className='mt-3 ms-auto'>
+                    <Nav as="nav" defaultActiveKey="/" activeKey={router.pathname} className='mt-3 ms-auto'>
                         <ul
                             role="main-navigation"
                             className="d-flex flex-column flex-md-row align-items-md-center">
