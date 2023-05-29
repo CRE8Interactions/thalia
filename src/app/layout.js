@@ -20,10 +20,10 @@ const dm_sans = DM_Sans({
     subsets: ['latin']
 })
 
-export const metadata = {
-    title: 'Southport Hall',
-    description: 'New Orleans Live Music & Party',
-}
+// export const metadata = {
+//     title: 'Southport Hall',
+//     description: 'New Orleans Live Music & Party',
+// }
 
 export default function RootLayout({ children }) {
 
