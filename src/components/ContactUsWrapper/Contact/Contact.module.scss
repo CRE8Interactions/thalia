@@ -16,7 +16,6 @@
 
 .map {
 	@include breakpoint-max(md) {
-		margin-bottom: $gap;
 		order: -1;
 	}
 }

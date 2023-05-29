@@ -39,16 +39,16 @@
 	}
 
 	ul {
+		gap: $gap-sm;
 		@include breakpoint-max(md) {
 			text-align: center;
 			width: max-content;
 			margin: auto;
-			gap: $gap-sm;
 		}
 	}
 	.nav-link {
 		&.active {
-			border-bottom: border($color: $primary);
+			border-bottom: border($border-width: 2px, $color: $primary);
 		}
 	}
 }

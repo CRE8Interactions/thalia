@@ -15,7 +15,7 @@ export default function Contact() {
     return (
         <section>
             <Card body className={`${styles.card} card--light card-sm`}>
-                <Row>
+                <Row className='grid-container gx-md-4'>
                     <Col xs={12} md={6} lg={4}>
                         <Card.Title as="h5" className='card-title-lg'>Southport Hall</Card.Title>
                         <div className='card-text'>
