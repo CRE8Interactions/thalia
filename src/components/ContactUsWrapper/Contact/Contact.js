@@ -38,10 +38,10 @@ export default function Contact() {
                         <Image
                             src={map}
                             quality={100}
-                            alt="Glassed Atrium and Front Bar"
+                            alt="Map of Southport Hall"
                             className={`${styles.image} image`}
                             width="742"
-                            height="339"
+                            height="301"
                             priority
                         />
                     </Col>
