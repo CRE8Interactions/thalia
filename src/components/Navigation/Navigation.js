@@ -10,7 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-import logo from '/public/images/logo.svg';
+import logo from '/public/images/logo.png';
 
 export default function Navigation() {
 
@@ -20,7 +20,7 @@ export default function Navigation() {
         <Navbar collapseOnSelect expand="md" className='navigation'>
             <Container>
                 <Link href="/" className="navbar-brand">
-                    <Image src={logo} alt="Southport Music Hall" width="72" height="100" />
+                    <Image src={logo} alt="Southport Hall" width="67" height="92" />
                 </Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" id="navbar-toggle" />
                 <Navbar.Collapse id="responsive-navbar-nav">

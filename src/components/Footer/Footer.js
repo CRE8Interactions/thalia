@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 import Stack from 'react-bootstrap/Stack';
 
-import logo from "/public/images/logo.svg"
+import logo from "/public/images/logo.png"
 import poweredBy from "/public/images/icons/logo-blocktickets.svg"
 import facebook from '/public/images/icons/facebook.svg';
 import instagram from '/public/images/icons/instagram.svg';
@@ -20,7 +20,7 @@ export default function Footer() {
         <footer className={styles.footer}>
             <Stack className="spacer-sm d-flex-column justify-content-center align-items-center">
                 <Link href="/">
-                    <Image src={logo} alt="Southport Music Hall" />
+                    <Image src={logo} width="67" height="92" alt="Southport Hall" />
                 </Link>
                 <address className='mt-3 fw-semi-bold'>
                     <p>200 Monticello Ave.</p>
