@@ -13,7 +13,7 @@ export default function Directions() {
             <Card body className='card--light card-sm'>
                 <Row className='grid-container'>
                     <Col xs={12} md={6} className='col'>
-                        <Card.Title as="h5" className='card-title-sm card-title--primary'>Directions from 1-10E</Card.Title>
+                        <Card.Title as="h5" className='card-title-sm card-title--primary'>Directions from I-10E</Card.Title>
                         <ul className={styles.list}>
                             <li>Travel east on I-10.</li>
                             <li>Take Exit 228, the Causeway Blvd S exit.</li>
@@ -27,7 +27,7 @@ export default function Directions() {
                         </ul>
                     </Col>
                     <Col xs={12} md={6} className='col'>
-                        <Card.Title as="h5" className='card-title-sm card-title--primary'>Directions from 1-10E</Card.Title>
+                        <Card.Title as="h5" className='card-title-sm card-title--primary'>Directions from I-10W</Card.Title>
                         <ul className={styles.list}>
                             <li>Travel west on I-10.</li>
                             <li>Stay on I-10 West until reaching Exit 232, which is Carrollton Ave/Highway 61 North/Tulane Ave.</li>
