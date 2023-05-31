@@ -22,7 +22,7 @@
 			flex-direction: column;
 			flex-basis: rem(178);
 			font-weight: $fw-medium;
-			padding: rem(12) $text-spacer-sm rem(20);
+			padding: rem(12) rem(24) rem(20);
 		}
 
 		&-title {
@@ -35,14 +35,6 @@
 
 		&-subtitle {
 			order: -1;
-			color: $text-muted;
-			font-size: $caption;
-		}
-
-		.card-text {
-			.date {
-				font-size: $h3-font-size;
-			}
 		}
 	}
 }

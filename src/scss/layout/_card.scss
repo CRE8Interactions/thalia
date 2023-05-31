@@ -50,6 +50,8 @@
 	&-subtitle {
 		margin-top: rem(4);
 		margin-bottom: rem(8);
+		color: $text-muted;
+		font-size: $caption;
 	}
 
 	&-text,
