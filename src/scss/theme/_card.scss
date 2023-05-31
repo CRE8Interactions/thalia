@@ -9,5 +9,5 @@ $card-inner-border-radius: theme.$border-radius theme.$border-radius 0px 0px;
 $card-title-spacer-y: $text-spacer-sm;
 
 // card body
-$card-spacer-y: $text-spacer-xs;
-$card-spacer-x: $text-spacer-xs;
+$card-spacer-y: rem(16);
+$card-spacer-x: rem(16);
