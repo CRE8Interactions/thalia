@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
-@use 'typography' as *;
-@use 'spacing' as *;
-@use 'container' as *;
+@use './typography' as *;
+@use './spacing' as *;
+@use './container' as *;
 @use '../theme/card' as *;
 @use '../theme/colors' as *;
 

@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
-@use 'spacing' as *;
-@use 'container' as *;
-@use './../theme/colors' as *;
+@use './spacing' as *;
+@use './container' as *;
+@use '../theme/colors' as *;
 
 .normal {
 	font-size: $body-2;

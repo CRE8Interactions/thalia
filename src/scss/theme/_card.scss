@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 @use '../layout/spacing' as *;
-@use '../theme/borders' as theme;
+@use './borders' as theme;
 
 $card-bg: #ffff;
 $card-border-color: transparent;
