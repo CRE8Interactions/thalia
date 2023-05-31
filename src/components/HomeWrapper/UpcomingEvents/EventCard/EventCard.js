@@ -10,7 +10,9 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 export default function EventCard({ event }) {
-
+    console.log(event)
+    let highTicketCost = Math.max(...event.tickets.map(o => o.cost))
+    let lowTicketCost = Math.min(...event.tickets.map(o => o.cost))
     return (
         <Link href={`https://blocktickets.xyz/e/${event.seoUrl}/${event.shortCode}`} target="_blank" className='text-decoration-none text-reset'>
             <Card className='event-card'>
@@ -39,7 +41,7 @@ export default function EventCard({ event }) {
                             <Row>
                                 <Col>
                                     <span className='small mb-1 text-primary d-block'>Concert Hall</span>
-                                    <span className='fw-bold normal'>{formatCurrency(18)}</span></Col>
+                                    <span className='fw-bold normal'>{formatCurrency(lowTicketCost)} { highTicketCost > lowTicketCost && `- ${formatCurrency(highTicketCost)}`}</span></Col>
                                 <Col className="d-flex align-items-end justify-content-end">
                                     <span className='caption text-muted'>Age 18+</span>
                                 </Col>
