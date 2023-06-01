@@ -22,11 +22,6 @@ export default function UpcomingEvents({ events }) {
                     </Col>
                 ))}
             </Row>
-            <Stack className="mt-5 align-items-center">
-                <Button variant="outline-light">
-                    Load more
-                </Button>
-            </Stack>
         </>
     );
 }
