@@ -28,6 +28,14 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="en">
+            <meta property="og:site_name" content="Southport Hall | Live Music and Event Venue" />
+            <meta property="og:title" content="New Orleans Live Music &amp; Party Hall | Southport Hall" />
+            <meta property="og:url" content="https://southporthall.com" />
+		    <meta property="og:site_name" content="Southport Hall" />
+		    <meta property="og:description" content="UPCOMING SHOWS WEDDINGS - PRIVATE PARTIES - LIVE ENTERTAINMENT Southport is located in Old Jefferson bounded roughly by Jefferson Highway on the north, the Mississippi River on the south, the Orleans-Jefferson parish line on the east and Dakin Street on the west. Southport" />
+            <meta name="twitter:card" content="summary" />
+		    <meta name="twitter:title" content="New Orleans Live Music &amp; Party Hall | Southport Hall" />
+            <meta property="og:image" content="https://southport.nyc3.cdn.digitaloceanspaces.com/southport-logo.png" />
             <body>
                 <style jsx global>{`
                 :root {
