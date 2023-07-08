@@ -40,7 +40,7 @@ export default function EventCard({ event }) {
                             </div>
                             <Row>
                                 <Col xs={8}>
-                                    <span className='small mb-1 text-primary d-block'>Concert Hall</span>
+                                    <span className='small mb-1 text-primary d-block'>{event?.venue?.name}</span>
                                     <span className='fw-bold'>{formatCurrency(lowTicketCost)} {highTicketCost > lowTicketCost && `- ${formatCurrency(highTicketCost)}`}</span></Col>
                                 <Col className="d-flex align-items-end justify-content-end">
                                     <span className='caption text-muted'>Age 18+</span>
