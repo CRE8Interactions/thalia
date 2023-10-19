@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import moment from "moment-timezone";
+import moment from "moment";
 
 import { formatDateTime, formatCurrency } from '@/utilities/helpers';
 
