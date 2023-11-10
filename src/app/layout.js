@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { Inter, DM_Sans } from 'next/font/google'
+import Script from 'next/script';
 
 import { Navigation, Footer } from '@/components'
 
@@ -20,11 +21,6 @@ const dm_sans = DM_Sans({
     subsets: ['latin']
 })
 
-// export const metadata = {
-//     title: 'Southport Hall',
-//     description: 'New Orleans Live Music & Party',
-// }
-
 export default function RootLayout({ children }) {
 
     useEffect(() => {
@@ -33,6 +29,14 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="en">
+            <meta property="og:site_name" content="Southport Hall | Live Music and Event Venue" />
+            <meta property="og:title" content="New Orleans Live Music &amp; Party Hall | Southport Hall" />
+            <meta property="og:url" content="https://southporthall.com" />
+            <meta property="og:site_name" content="Southport Hall" />
+            <meta property="og:description" content="UPCOMING SHOWS WEDDINGS - PRIVATE PARTIES - LIVE ENTERTAINMENT Southport is located in Old Jefferson bounded roughly by Jefferson Highway on the north, the Mississippi River on the south, the Orleans-Jefferson parish line on the east and Dakin Street on the west. Southport" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:title" content="New Orleans Live Music &amp; Party Hall | Southport Hall" />
+            <meta property="og:image" content="https://southport.nyc3.cdn.digitaloceanspaces.com/southport-logo.png" />
             <body>
                 <style jsx global>{`
                 :root {
@@ -46,6 +50,24 @@ export default function RootLayout({ children }) {
                     {children}
                 </main>
                 <Footer />
+                <Script
+                    id="fb-pixel"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                    !function(f,b,e,v,n,t,s)
+                    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                    n.queue=[];t=b.createElement(e);t.async=!0;
+                    t.src=v;s=b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t,s)}(window, document,'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+                    fbq('init', '842729400339292');
+                    fbq('track', 'PageView');
+                    `,
+                    }}
+                />
             </body>
         </html>
     )
