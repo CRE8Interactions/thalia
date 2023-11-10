@@ -40,11 +40,17 @@ export default function EventCard({ event }) {
                                 <Card.Subtitle as="h6">{formatDateTime(moment(event.start))} - {formatDateTime(moment(event.end), 'timeOnly')}</Card.Subtitle>
                             </div>
                             <Row>
-                                <Col xs={8}>
-                                    <span className='small mb-1 text-primary d-block'>Concert Hall</span>
-                                    <span className='fw-bold'>{formatCurrency(lowTicketCost)} {highTicketCost > lowTicketCost && `- ${formatCurrency(highTicketCost)}`}</span></Col>
-                                <Col className="d-flex align-items-end justify-content-end">
-                                    <span className='caption text-muted'>Age 18+</span>
+                                <Col>
+                                    <Stack gap={1}>
+                                        <span className='small text-primary'>Concert Hall</span>
+                                        <span className='fw-bold'>{formatCurrency(lowTicketCost)}+</span>
+                                    </Stack>
+                                </Col>
+                                <Col className="d-flex">
+                                    <Stack className='mt-auto'>
+                                        <span className='caption fw-semi-bold m-0'>Door time: {formatDateTime(moment(event.doorsOpen), 'timeOnly')}</span>
+                                        <span className='caption text-muted m-0'>Age 18+</span>
+                                    </Stack>
                                 </Col>
                             </Row>
                         </Col>
