@@ -33,21 +33,21 @@ export default function EventCard({ event }) {
                                 </Card.Text>
                             </Stack>
                         </Col>
-                        <Col xs={10} className='d-flex-column justify-content-between'>
+                        <Col xs={10} className='d-flex-column justify-content-between pe-0'>
                             <div className='d-flex-column'>
                                 <Card.Title as="h5">{event.name}</Card.Title>
                                 <Card.Subtitle as="h6">{formatDateTime(moment(event.start))} - {formatDateTime(moment(event.end), 'timeOnly')}</Card.Subtitle>
                             </div>
                             <Row>
-                                <Col>
+                                <Col className='pe-0'>
                                     <Stack gap={1}>
                                         <span className='small text-primary'>Concert Hall</span>
                                         <span className='fw-bold'>{formatCurrency(lowTicketCost)}+</span>
                                     </Stack>
                                 </Col>
                                 <Col className="d-flex">
-                                    <Stack className='mt-auto'>
-                                        <span className='caption fw-semi-bold m-0'>Door time: {formatDateTime(moment(event.doorsOpen), 'timeOnly')}</span>
+                                    <Stack className='mt-auto align-items-end'>
+                                        <span className='caption fw-semi-bold m-0 text-nowrap'>Door time: {formatDateTime(moment(event.doorsOpen), 'timeOnly')}</span>
                                         <span className='caption text-muted m-0'>Age 18+</span>
                                     </Stack>
                                 </Col>
