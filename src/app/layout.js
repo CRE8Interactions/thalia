@@ -29,8 +29,8 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="en">
-            <meta property="og:site_name" content="Thalia Mara Hall" />
-            <meta property="og:title" content="Thalia Mara Hall" />
+            <meta property="og:site_name" content="THALIA MARA HALL" />
+            <meta property="og:title" content="THALIA MARA HALL" />
             <meta property="og:url" content="https://thaliamarahall.com" />
             <meta property="og:site_name" content="THALIA MARA HALL" />
             <meta property="og:description" content="Thalia Mara Hall is the Municipal Auditorium of the City of Jackson and a facility managed by the Department of Human and Cultural Services.The 2,040 seat theater is located in the downtown arts and cultural district of Jackson. Thalia Mara Hall was built in 1968 and was called the Jackson Municipal Auditorium. In 1975, the Jackson Ballet Guild invited Miss Thalia Mara, a Chicago native with an extensive career as a performer in the United States and abroad, to develop a professional ballet company and school in the state of Mississippi." />
