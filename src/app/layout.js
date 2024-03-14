@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { Inter, DM_Sans } from 'next/font/google'
-import Script from 'next/script';
+// import Script from 'next/script';
 
 import { Navigation, Footer } from '@/components'
 
@@ -29,14 +29,14 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="en">
-            <meta property="og:site_name" content="Southport Hall | Live Music and Event Venue" />
-            <meta property="og:title" content="New Orleans Live Music &amp; Party Hall | Southport Hall" />
-            <meta property="og:url" content="https://southporthall.com" />
-            <meta property="og:site_name" content="Southport Hall" />
-            <meta property="og:description" content="UPCOMING SHOWS WEDDINGS - PRIVATE PARTIES - LIVE ENTERTAINMENT Southport is located in Old Jefferson bounded roughly by Jefferson Highway on the north, the Mississippi River on the south, the Orleans-Jefferson parish line on the east and Dakin Street on the west. Southport" />
+            <meta property="og:site_name" content="THALIA MARA HALL" />
+            <meta property="og:title" content="THALIA MARA HALL" />
+            <meta property="og:url" content="https://thaliamarahall.com" />
+            <meta property="og:site_name" content="THALIA MARA HALL" />
+            <meta property="og:description" content="Thalia Mara Hall is the Municipal Auditorium of the City of Jackson and a facility managed by the Department of Human and Cultural Services.The 2,040 seat theater is located in the downtown arts and cultural district of Jackson. Thalia Mara Hall was built in 1968 and was called the Jackson Municipal Auditorium. In 1975, the Jackson Ballet Guild invited Miss Thalia Mara, a Chicago native with an extensive career as a performer in the United States and abroad, to develop a professional ballet company and school in the state of Mississippi." />
             <meta name="twitter:card" content="summary" />
-            <meta name="twitter:title" content="New Orleans Live Music &amp; Party Hall | Southport Hall" />
-            <meta property="og:image" content="https://southport.nyc3.cdn.digitaloceanspaces.com/southport-logo.png" />
+            <meta name="twitter:title" content="Thalia Mara Hall is the Municipal Auditorium of the City of Jackson and a facility managed by the Department of Human and Cultural Services.The 2,040 seat theater is located in the downtown arts and cultural district of Jackson. Thalia Mara Hall was built in 1968 and was called the Jackson Municipal Auditorium. In 1975, the Jackson Ballet Guild invited Miss Thalia Mara, a Chicago native with an extensive career as a performer in the United States and abroad, to develop a professional ballet company and school in the state of Mississippi." />
+            <meta property="og:image" content="https://premier-prod.s3.us-east-1.wasabisys.com/styles/500w/s3/venues/thalia_mara_hall.png?itok=JbbN1Q_h" />
             <body>
                 <style jsx global>{`
                 :root {
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
                     {children}
                 </main>
                 <Footer />
-                <Script
+                {/* <Script
                     id="fb-pixel"
                     strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
                     fbq('track', 'PageView');
                     `,
                     }}
-                />
+                /> */}
             </body>
         </html>
     )
