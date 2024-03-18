@@ -17,28 +17,28 @@ export default function Contact() {
             <Card body className={`${styles.card} card--light card-sm`}>
                 <Row className='grid-container gx-md-4'>
                     <Col xs={12} md={6} lg={4}>
-                        <Card.Title as="h5" className='card-title-lg'>Southport Hall</Card.Title>
+                        <Card.Title as="h5" className='card-title-lg'>Thalia Mara Hall</Card.Title>
                         <div className='card-text'>
-                            <address className=' fw-semi-bold'>
-                                <p>200 Monticello Ave.</p>
-                                <p>Jefferson, LA 70121</p>
+                            <address className='lh-normal'>
+                                <p>255 East Pascagoula Street</p>
+                                <p>Jackson, MS 39201</p>
                             </address>
                             <address>
                                 <p className='fw-bold'>Email:</p>
-                                <a href="mailto:info@southporthall.com" className='text-decoration-none'>info@southporthall.com</a>
+                                <a href="mailto:info@thaliamara.net" className='text-decoration-none'>info@thaliamara.net</a>
                             </address>
                             <address>
                                 <p className='fw-bold'>Phone:</p>
-                                <p>504-835-2903</p>
+                                <p>601-960-1537</p>
                             </address>
                         </div>
-                        <Link href="https://www.google.com/maps/place/Southport+Hall/@29.9544435,-90.1366772,15z/data=!4m6!3m5!1s0x8620a546dea457b9:0x56f9086bc4ce869b!8m2!3d29.9544435!4d-90.1366772!16s%2Fg%2F1w15zt6k?entry=ttu" target="_blank" className='btn btn-outline-light mt-2 w-100'>Go to Google Maps</Link>
+                        <Link href="https://www.google.com/maps/dir/43.4267291,-79.7409268/thalia+hall/@42.3859073,-88.9762437,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x880e2cffdb62b721:0x9a4a94db5d09cf36!2m2!1d-87.6575089!2d41.8576924?entry=ttu" target="_blank" className='btn btn-outline-light mt-2 w-100'>Go to Google Maps</Link>
                     </Col>
                     <Col xs={12} md={6} lg={8} className={`${styles.map}`}>
                         <Image
                             src={map}
                             quality={100}
-                            alt="Map of Southport Hall"
+                            alt="Map of Thalia Mara   Hall"
                             className={`${styles.image} image`}
                             width="742"
                             height="301"

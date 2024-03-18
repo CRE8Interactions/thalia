@@ -22,28 +22,28 @@ export default function Footer() {
             <Card body className='card-lg'>
                 <Stack className="d-flex-column flex-lg-row gap-lg-5 align-items-center align-items-lg-stretch">
                     <Link href="/">
-                        <Image src={logo} width="67" height="92" alt="Southport Hall logo" />
+                        <Image src={logo} width="96" height="41" alt="Thalia Mara Hall logo" />
                     </Link>
                     <Stack className={styles.info}>
-                        <h6 className='mt-3 mt-lg-0 mt-md-5 mb-1 headline-6'>Southport Hall</h6>
+                        <h6 className='mt-3 mt-lg-0 mt-md-5 mb-1 headline-6'>Thalia Mara Hall</h6>
                         <Stack gap={2} className={`gap-md-1 ${styles.address}`}>
                             <address className='m-0 text-muted fw-medium'>
-                                <p>200 Monticello Ave, <span className="d-block d-lg-inline">Jefferson, LA, 70121</span></p>
+                                <p>255 East Pascagoula Street, <span className="d-block d-lg-inline">Jackson, MS 39201</span></p>
                             </address>
                             <Stack direction="horizontal" as="ul" className={styles.socialIcons}>
                                 <li>
-                                    <Link href="https://www.facebook.com/southporthall" target="_blank">
+                                    <Link href="https://www.facebook.com/ThaliaMaraHall/" target="_blank">
                                         <Image src={facebook} alt="facebook" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="https://www.instagram.com/southporthall" target="_blank">
-                                        <Image src={instagram} alt="instagram" />
+                                    <Link href="https://twitter.com/thaliahall" target="_blank">
+                                        <Image src={twitter} alt="twitter" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="https://www.instagram.com/Southporthall" target="_blank">
-                                        <Image src={twitter} alt="twitter" />
+                                    <Link href="https://www.instagram.com/thaliamarahall/" target="_blank">
+                                        <Image src={instagram} alt="instagram" />
                                     </Link>
                                 </li>
                             </Stack>

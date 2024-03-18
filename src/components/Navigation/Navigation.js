@@ -28,16 +28,16 @@ export default function Navigation() {
 
     const navItems = [
         {
-            label: "Calendar",
+            label: "Events",
             url: "/"
         },
         {
-            label: "Private events",
-            url: "/private-events"
+            label: "About",
+            url: "/about"
         },
         {
-            label: "History",
-            url: "/history"
+            label: "FAQ",
+            url: "/faq"
         },
         {
             label: "Contact us",

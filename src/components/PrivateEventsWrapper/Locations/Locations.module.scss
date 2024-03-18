@@ -1,8 +1,0 @@
-@use '../../../scss/abstracts' as *;
-
-.image {
-	width: 100%;
-	@include breakpoint-max(lg) {
-		height: 315px;
-	}
-}

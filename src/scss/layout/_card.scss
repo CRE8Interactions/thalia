@@ -8,38 +8,29 @@
 .card {
     box-shadow: $box-shadow;
 
+    &--no-shadow {
+        box-shadow: none;
+    }
+
+    // about, faq cards
+    &--light {
+        background-color: $white;
+    }
+
     &-body {
         @include breakpoint-min(md) {
-            padding: rem(32);
+            padding: $text-spacer;
         }
     }
 
     &-title {
-        @extend .headline-6 !optional;
-        font-weight: $fw-semi-bold;
-
-        @include breakpoint-min(lg) {
-            font-size: $body-1;
-        }
-
-        // contact us - directions card
-        &-sm {
-            @extend .normal-md !optional;
-            margin-bottom: $text-spacer-sm;
-
-            @include breakpoint-min(md) {
-                font-size: $h6-font-size;
-            }
-        }
+        @extend .fs-md !optional;
+        font-weight: $fw-bold;
 
         // contact us
         &-lg {
             @extend .headline-5 !optional;
             margin-bottom: rem(6);
-        }
-
-        &--primary {
-            color: $primary;
         }
     }
 
@@ -60,7 +51,8 @@
         }
 
         & + &,
-        & + .row {
+        & + .row,
+        & + .vstack {
             margin-top: $text-spacer-sm;
         }
     }
@@ -69,6 +61,22 @@
         margin-top: $text-spacer-sm;
     }
 
+    & + & {
+        margin-top: $text-spacer;
+    }
+
+    // about cards
+    &-sm {
+        .card {
+            &-body {
+                padding: $text-spacer-xs;
+
+                @include breakpoint-min(md) {
+                    padding: $text-spacer-sm;
+                }
+            }
+        }
+    }
     // footer card
     &-lg {
         .card {

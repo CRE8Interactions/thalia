@@ -30,15 +30,15 @@ h5,
 }
 
 .headline {
-    // private events header text
-    &-1 {
-        @extend .h1 !optional; // 56
-    }
     // section headings
-    &-2 {
-        @extend .h2 !optional; // 48
+    &-1 {
+        @extend .h1 !optional; // 48
     }
-    // section headings, card titles
+    // FAQ section heading
+    &-2 {
+        @extend .h2 !optional; // 40
+    }
+    // card titles
     &-3 {
         @extend .h3 !optional; // 32
     }
@@ -150,15 +150,9 @@ h5,
         font-size: $h3-font-size;
     }
 
-    // hero, private events header
+    // hero
     &-lg {
         @extend .headline-3 !optional;
-        @include breakpoint-min(md) {
-            font-size: $h2-font-size;
-        }
-    }
-    // private events header
-    &-xl {
         @include breakpoint-min(md) {
             font-size: $h1-font-size;
         }
