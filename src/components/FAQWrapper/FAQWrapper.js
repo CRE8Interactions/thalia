@@ -58,8 +58,8 @@ export default function FAQWrapper() {
         <section className="spacer">
             <Card body>
                 <h1 className='headline-2 text-center mb-4'>FAQ</h1>
-                {FAQs?.map(faq => (
-                    <FAQ faq={faq} />
+                {FAQs?.map((faq, idx) => (
+                    <FAQ key={idx} faq={faq} />
                 ))}
             </Card>
         </section>

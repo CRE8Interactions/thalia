@@ -18,14 +18,14 @@ export default function About() {
                 <Image
                     src={about1}
                     quality={100}
-                    className="image"
+                    className="br-16"
                     alt="Thalia Mara Hall Lobby"
                     width="300"
                     height="231" />
                 <Image
                     src={about2}
                     quality={100}
-                    className="image"
+                    className="br-16"
                     alt="Thalia Mara Hall Stageview"
                     width="300"
                     height="231" />

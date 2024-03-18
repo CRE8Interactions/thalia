@@ -38,8 +38,8 @@ export default function Contact() {
                         <Image
                             src={map}
                             quality={100}
-                            alt="Map of Thalia Mara   Hall"
-                            className={`${styles.image} image`}
+                            alt="Map of Thalia Mara Hall"
+                            className={styles.image}
                             width="742"
                             height="301"
                             priority

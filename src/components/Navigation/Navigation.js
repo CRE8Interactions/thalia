@@ -6,23 +6,16 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link'
 import Image from 'next/image';
 
-import { useWindowSize } from '@/utilities/hooks';
-
 import Container from 'react-bootstrap/Container';
 import Stack from 'react-bootstrap/Stack';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Dropdown from 'react-bootstrap/Dropdown';
 
+import logo from '/public/images/logo.png';
 import icon from '/public/images/icons/icon-blocktickets.svg';
-import desktopLogo from '/public/images/logo.png';
-import mobileLogo from '/public/images/logo-sm.png';
 
 export default function Navigation() {
-
-    const windowSize = useWindowSize();
-
-    const logo = windowSize < 768 ? mobileLogo : desktopLogo;
 
     const router = useRouter();
 
@@ -52,11 +45,11 @@ export default function Navigation() {
     return (
         <Navbar className='navigation container'>
             <Link href="/" className="navbar-brand desktop-only">
-                <Image src={logo} alt="Southport Hall logo" width="47" height="76" className='logo' />
+                <Image src={logo} alt="Thalia Mara Hall logo" width="102" height="44" className='logo' />
             </Link>
             <Container>
                 <Link href="/" className="navbar-brand mobile-tablet-only">
-                    <Image src={desktopLogo} alt="Southport Hall logo" width="67" height="92" className='logo' />
+                    <Image src={logo} alt="Thalia Mara Hall logo" width="102" height="44" className='logo' />
                 </Link>
                 <Nav as="nav" variant="pills" defaultActiveKey="/" activeKey={router.pathname} className="ms-auto">
                     <Dropdown className='mobile-only ms-auto' align="end">
