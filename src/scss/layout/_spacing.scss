@@ -56,12 +56,12 @@ $text-spacer-xs: rem(16);
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: $gap;
+    gap: $gap-sm;
     flex-wrap: wrap;
 
+    // about - top images
     &-multi-row {
         @include breakpoint-min(xl) {
-            gap: 0;
             justify-content: space-between;
         }
     }

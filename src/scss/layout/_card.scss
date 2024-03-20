@@ -35,11 +35,11 @@
     }
 
     &-subtitle {
-        margin-top: rem(4);
-        margin-bottom: rem(8);
+        margin-top: 0px;
+        margin-bottom: rem(5);
         color: $text-muted;
-        @extend .caption !optional;
-        @extend .caption-bold !optional;
+        @extend .small !optional;
+        @extend .small-bold !optional;
     }
 
     &-text,
