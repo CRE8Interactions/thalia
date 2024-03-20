@@ -38,7 +38,8 @@
         margin-top: rem(4);
         margin-bottom: rem(8);
         color: $text-muted;
-        font-size: $caption;
+        @extend .caption !optional;
+        @extend .caption-bold !optional;
     }
 
     &-text,
@@ -81,10 +82,10 @@
     &-lg {
         .card {
             &-body {
-                padding: rem(48) $text-spacer-lg;
+                padding: $text-spacer;
 
-                @include breakpoint-min(lg) {
-                    padding: rem(64) rem(48);
+                @include breakpoint-min(md) {
+                    padding: rem(51) rem(48);
                 }
             }
         }

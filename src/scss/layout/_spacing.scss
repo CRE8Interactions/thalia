@@ -15,7 +15,6 @@ $gap: rem(32); // about, contact us
 $gap-sm: rem(24); // faq
 $gap-xs: rem(16); // nav links, footer social icons
 
-$text-spacer-lg: rem(40); // footer card
 $text-spacer: rem(32);
 $text-spacer-sm: rem(24);
 $text-spacer-xs: rem(16);
@@ -43,6 +42,13 @@ $text-spacer-xs: rem(16);
             gap: $gap-lg;
         }
     }
+
+    // upcoming events
+    &.spacer-top {
+        @include breakpoint-min(md) {
+            margin-top: calc($spacer - $text-spacer);
+        }
+    }
 }
 
 // about
@@ -53,16 +59,10 @@ $text-spacer-xs: rem(16);
     gap: $gap;
     flex-wrap: wrap;
 
-    @include breakpoint-max(md) {
-        flex-direction: column;
-    }
-
-    @include breakpoint-min(lg) {
-        flex-wrap: nowrap;
-    }
-
-    // about - top images
-    &-sm {
-        gap: $gap-sm;
+    &-multi-row {
+        @include breakpoint-min(xl) {
+            gap: 0;
+            justify-content: space-between;
+        }
     }
 }
