@@ -85,7 +85,11 @@
                 padding: $text-spacer;
 
                 @include breakpoint-min(md) {
-                    padding: rem(51) rem(48);
+                    padding: rem(48) rem(40);
+                }
+
+                @include breakpoint-min(lg) {
+                    padding: rem(64) rem(48);
                 }
             }
         }
