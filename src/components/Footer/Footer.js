@@ -25,7 +25,7 @@ export default function Footer() {
                         <Image src={logo} width="191" height="82" alt="Thalia Mara Hall logo" className={styles.logo} />
                     </Link>
                     <Stack className={styles.info}>
-                        <h6 className='mt-3 mt-lg-0 mt-md-4 mb-2 headline-6'>Thalia Mara Hall</h6>
+                        <h6 className='mt-3 mt-lg-0 mt-md-4 mb-2 mb-md-1 headline-6'>Thalia Mara Hall</h6>
                         <Stack gap={2} className={`gap-md-1 ${styles.address}`}>
                             <address className='m-0 text-muted fw-medium'>
                                 <p>255 East Pascagoula Street, <span className="d-block d-md-inline">Jackson, MS 39201</span></p>
