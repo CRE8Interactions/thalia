@@ -28,7 +28,7 @@ export default function Footer() {
                         <h6 className='mt-3 mt-lg-0 mt-md-4 mb-2 mb-md-1 headline-6'>Thalia Mara Hall</h6>
                         <Stack gap={2} className={`gap-md-1 ${styles.address}`}>
                             <address className='m-0 text-muted fw-medium'>
-                                <p>255 East Pascagoula Street, <span className="d-block d-md-inline">Jackson, MS 39201</span></p>
+                                <p className='lh-sm'>255 East Pascagoula Street, <span className="d-block d-md-inline">Jackson, MS 39201</span></p>
                             </address>
                             <Stack direction="horizontal" as="ul" className={styles.socialIcons}>
                                 <li>
